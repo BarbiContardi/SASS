@@ -1,0 +1,29 @@
+$color-primary: red;
+$color-secundary: blue;
+$color-tertiary: green;
+
+div {
+  border: 1px solid $color-primary;
+
+  h1 {
+    color: $color-tertiary;
+    text-align: center;
+    text-decoration: underline 1px $color-secundary;
+    text-underline-offset: 0.5rem;
+  }
+}
+section {
+  display: flex;
+  padding: 1rem;
+}
+article {
+    border: 1px solid $color-tertiary;
+    padding: 1rem;
+    text-align: center;
+    p.blue{
+        color:$color-secundary;
+    }
+    p.red{
+        color:$color-primary;
+    }
+}

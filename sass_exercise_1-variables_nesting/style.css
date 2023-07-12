@@ -1,0 +1,28 @@
+div {
+  border: 1px solid red;
+}
+div h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline 1px blue;
+  text-underline-offset: 0.5rem;
+}
+
+section {
+  display: flex;
+  padding: 1rem;
+}
+
+article {
+  border: 1px solid green;
+  padding: 1rem;
+  text-align: center;
+}
+article p.blue {
+  color: blue;
+}
+article p.red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
