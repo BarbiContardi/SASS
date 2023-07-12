@@ -1,0 +1,39 @@
+@use "sass:color";
+$color-primary: green;
+$color-secundary: red;
+$color-ternary: blue;
+
+@mixin article-card($color, $border-color, $font-size) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
+div {
+  border: 1px solid $color-secundary;
+  display: block;
+  h1 {
+    text-align: center;
+    color: $color-primary;
+    text-decoration: underline 1px $color-ternary;
+    text-underline-offset: 0.5rem;
+  }
+}
+section {
+  display: flex;
+  padding: 1rem;
+  article {
+    border: 1px solid $color-primary;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+.article-blue{
+    @include article-card($color-ternary, -$color-primary, 1rem);
+}
+.article-red{
+    @include article-card($color-secundary, $color-primary, 1rem);
+}
+.article-green{
+    @include article-card($color-primary, $color-ternary, 24px);
+    flex:1;
+}

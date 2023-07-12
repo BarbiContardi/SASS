@@ -1,0 +1,40 @@
+div {
+  border: 1px solid red;
+  display: block;
+}
+div h1 {
+  text-align: center;
+  color: green;
+  -webkit-text-decoration: underline 1px blue;
+          text-decoration: underline 1px blue;
+  text-underline-offset: 0.5rem;
+}
+
+section {
+  display: flex;
+  padding: 1rem;
+}
+section article {
+  border: 1px solid green;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-blue {
+  color: blue;
+  border-color: -green;
+  font-size: 1rem;
+}
+
+.article-red {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.article-green {
+  color: green;
+  border-color: blue;
+  font-size: 24px;
+  flex: 1;
+}/*# sourceMappingURL=style.css.map */
