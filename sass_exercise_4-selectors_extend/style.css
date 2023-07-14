@@ -1,0 +1,52 @@
+div {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+div h2, div h1 {
+  text-align: center;
+  color: green;
+}
+div h1 {
+  text-decoration: underline 1px blue;
+  text-underline-offset: 0.5rem;
+}
+div h2 {
+  border: 1px solid red;
+  padding: 1rem;
+  width: max-content;
+}
+
+section {
+  display: flex;
+  padding: 1rem;
+}
+section article {
+  border: 1px solid green;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-blue {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.article-red {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.article-green {
+  color: green;
+  border-color: blue;
+  font-size: 1.5rem;
+  width: 95vw;
+}
+
+/*# sourceMappingURL=style.css.map */
