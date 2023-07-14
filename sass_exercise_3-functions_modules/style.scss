@@ -1,0 +1,45 @@
+@use "variables.scss" as v;
+@use "function.scss" as f;
+@use "sass:color";
+
+@mixin article-card($color, $border-color, $font-size) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
+
+div {
+  border: 1px solid v.$color-secundary;
+  display: block;
+  
+  h1 {
+    text-align: center;
+    color: v.$color-primary;
+    text-decoration: underline 1px v.$color-ternary;
+    text-underline-offset: f.rem(8px);
+  }
+}
+
+section {
+  display: flex;
+  padding: f.rem(16px);
+  
+  article {
+    border: 1px solid v.$color-primary;
+    padding: f.rem(16px);
+    text-align: center;
+  }
+}
+
+.article-blue {
+  @include article-card(v.$color-ternary, v.$color-primary, f.rem(16px));
+}
+
+.article-red {
+  @include article-card(v.$color-secundary, v.$color-primary, f.rem(16px)); 
+}
+
+.article-green {
+  @include article-card(v.$color-primary, v.$color-ternary, f.rem(24px)); 
+  flex: 1;
+}
